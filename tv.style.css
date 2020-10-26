@@ -1,0 +1,335 @@
+﻿@charset "UTF-8";
+/**********************************************
+note : reset
+**********************************************/
+.tv-wrap .box-skin .header > strong,.tv-wrap .box-skin .header > a {margin-bottom:2rem;font-family:inherit;font-size:2.3rem}
+
+/**********************************************
+note : 메인(TV) default
+**********************************************/
+.index-wrap.tv-main .index-columns-flex {margin-bottom:2rem;padding-bottom:1.75rem;background-color:#232323}
+@media screen and (max-width: 63.9375em) {
+	.row .index-wrap.tv-main .index-content {padding-left:1.25rem;padding-right:1.25rem}
+	.row .index-wrap.tv-main .index-row,.row .index-wrap.tv-main .index-columns {display:block}
+	.row .index-wrap.tv-main .index-row,.row .index-wrap.tv-main .index-columns::after {content:'';display:table;clear:both}
+	.row .index-wrap.tv-main .index-columns.grid-1,.row .index-wrap.tv-main .index-columns.grid-2 {float:left;width:50%}
+	.row .index-wrap.tv-main .index-columns.grid-3,.row .index-wrap.tv-main .index-columns.grid-4 {width:auto}
+	.row .index-wrap.tv-main .index-columns.grid-4 {padding-right:0}
+	.row .index-wrap.tv-main .index-columns.grid-1,.row .index-wrap.tv-main .index-columns.grid-3 {padding-left:0}
+}
+@media screen and (max-width: 39.9375em) {
+	.row .index-wrap.tv-main .index-columns.grid-1,.row .index-wrap.tv-main .index-columns.grid-2 {float:none;width:auto}
+	.row .index-wrap.tv-main .index-columns.grid-1 {padding-right:0}
+	.row .index-wrap.tv-main .index-columns.grid-2 {padding-left:0}
+}
+
+/**********************************************
+note : 메인(TV) view
+**********************************************/
+.index-wrap.tv-view .index-columns.grid-3 {padding:1.25rem 1.531rem;border:1px solid rgba(0,0,0,.12);border-bottom:none}
+@media screen and (max-width: 63.9375em) {
+	.row .index-wrap.tv-view .index-content {padding-left:1.25rem;padding-right:1.25rem}
+	.row .index-wrap.tv-view .index-row,.row .index-wrap.tv-view .index-columns {display:block}
+	.row .index-wrap.tv-view .index-row,.row .index-wrap.tv-view .index-columns::after {content:'';display:table;clear:both}
+	.row .index-wrap.tv-view .index-columns.grid-1,.row .index-wrap.tv-view .index-columns.grid-2 {float:left;width:50%}
+	.row .index-wrap.tv-view .index-columns.grid-3,.row .index-wrap.tv-view .index-columns.grid-4 {width:auto}
+	.row .index-wrap.tv-view .index-columns.grid-4 {padding-right:0}
+	.row .index-wrap.tv-view .index-columns.grid-1 {padding-left:0}
+	.row .index-wrap.tv-view .index-columns.grid-3 {padding:0;border:none}
+}
+@media screen and (max-width: 39.9375em) {
+	.row .index-wrap.tv-view .index-columns.grid-1,.row .index-wrap.tv-view .grid-2 {float:none;width:auto}
+	.row .index-wrap.tv-view .index-columns.grid-1 {padding-right:0}
+	.row .index-wrap.tv-view .index-columns.grid-2 {padding-left:0}
+}
+
+/**********************************************
+note : TV(admin)
+**********************************************/
+.program-list .program-images {width:100%;table-layout:fixed}
+.program-list .program-images .dis-table-cell {width:100%;height:120px;text-align:center;vertical-align:middle}
+.program-list .program-images img {height:100%}
+.program-list .label-group {margin-bottom:.5rem}
+.program-list .program-summary {font-size:.9rem;line-height:1.65em;color:rgba(0,0,0,.55)}
+.program-list .program-time {font-size:.75rem;color:rgba(0,0,0,.7)}
+
+/**********************************************
+note : TV(user)
+**********************************************/
+body {background-color:#ecf0f1}
+.tv-wrap,.tv-wrap button,.tv-wrap input {font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR','Malgun Gothic','돋움','dotum',"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif}
+.tv-wrap #user-header {padding:1.25rem;background:#232323}
+.tv-wrap #user-header .row {position:relative}
+@media screen and (max-width: 63.9375em) {
+	.tv-wrap,.tv-wrap button,.tv-wrap input {font-family:inherit}
+}
+
+/* logo */
+.tv-wrap #user-header .user-logo {text-align:center}
+.tv-wrap #user-header .user-logo::after {content:'TV';margin-left:.5rem;padding:.25rem 1.25rem;font-size:1rem;font-weight:500;line-height:1;color:#fff;background-color:#e74c3c;border-radius:.2rem}
+@media screen and (max-width: 63.9375em) {
+	.tv-wrap #user-header .user-logo::after {padding-left:.8rem;padding-right:.8rem}
+}
+
+/* nav */
+.tv-wrap #user-nav .menu li a {font-size:1.063rem;letter-spacing:-0.05em;color:rgba(255,255,255,.6)}
+.tv-wrap #user-nav .menu li a:hover {color:#fefefe}
+.tv-wrap #user-nav .menu li.active a {font-weight:500;color:#fefefe;background-color:#e74c3c;border-radius:.15rem}
+@media screen and (max-width: 63.9375em) {
+	.tv-wrap #user-nav {margin-top:1.25rem;text-align:center}
+	.tv-wrap #user-nav .menu {display:inline-block;max-height:40px;margin-left:auto;margin-right:auto}
+	.tv-wrap #user-nav .menu li {display:inline-block}
+}
+
+/* footer */
+.tv-wrap  #footer-wrap {padding:1.25rem 0;background-color:#fff;text-align:center;border-top:1px solid rgba(0,0,0,.12)}
+.tv-wrap  #footer-wrap ul.float-center {display:inline-block;margin-bottom:0}
+.tv-wrap  #footer-wrap ul li {float:left;font-size:.9rem;line-height:1;letter-spacing:-0.05em;color:rgba(0,0,0,.55)}
+.tv-wrap  #footer-wrap ul li::before {content:'|';margin:0 .75rem;color:rgba(0,0,0,.25)}
+.tv-wrap  #footer-wrap ul li:first-child::before {display:none}
+
+/**********************************************
+note : TV view page(user)
+**********************************************/
+/* header */
+.tv-header-mov {position:relative;margin-top:1.25rem;margin-bottom:1.5rem;background-color:#fff;border:1px solid rgba(0,0,0,.12)}
+.tv-header-mov::after {content:'';display:table;clear:both}
+@media screen and (max-width: 63.9375em) {
+	.row .tv-header-mov {border:none;margin-top:0;margin-left:-1.25rem;margin-right:-1.25rem}
+}
+
+.tv-header-mov .mov-columns {float:left;min-height:1px}
+.tv-header-mov .mov-columns.mov-player {width:calc(100% - 348px);margin:-1px} 
+@media screen and (max-width: 63.9375em) {
+	.row .tv-header-mov .mov-columns {float:none}
+	.row .tv-header-mov .mov-columns.mov-player,.row .tv-header-mov .mov-columns.mov-list {width:auto}
+	.row .tv-header-mov .mov-columns.mov-player {margin:0}
+}
+
+/* mov content */
+.tv-header-mov .mov-columns.mov-player .mov-player-container {padding:1.25rem 1.5rem}
+.tv-header-mov .mov-columns.mov-player .mov-title {margin-bottom:1rem;font-size:2rem;font-weight:500;line-height:1.25;letter-spacing:-0.05em}
+.tv-header-mov .mov-columns.mov-player .mov-info::after {content:'';display:table;clear:both}
+.tv-header-mov .mov-columns.mov-player .mov-info ul {margin:0;padding:0;list-style:none}
+.tv-header-mov .mov-columns.mov-player .mov-info .button-group {margin-bottom:0}
+.tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time li {float:left;font-size:.8rem;letter-spacing:-0.025em;color:#888}
+.tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time li::before {content:'|';margin:0 .625rem;color:rgba(0,0,0,.2)}
+.tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time li:first-child::before {display:none}
+.tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time li a {color:#888}
+.tv-header-mov .mov-columns.mov-player .mov-summary {font-size:1.063rem;line-height:1.65em;letter-spacing:-.05em}
+.tv-header-mov .mov-columns.mov-player .mov-summary p {margin-bottom:1.25rem}
+.tv-header-mov .mov-columns.mov-player .mov-summary p:first-child {margin-bottom:0}
+.tv-header-mov .mov-columns.mov-player .mov-key-note {font-size:.9rem}
+.tv-header-mov .mov-columns.mov-player .mov-key-note dt {margin-bottom:.5rem;font-weight:500;line-height:1}
+.tv-header-mov .mov-columns.mov-player .mov-key-note dd {margin-bottom:1.25rem;font-weight:300;color:rgba(0,0,0,.55)}
+.tv-header-mov .mov-columns.mov-player .mov-key-note ul li {font-weight:300;line-height:1.65em;color:rgba(0,0,0,.55)}
+@media screen and (max-width: 39.9375em) {
+	.row .tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time {margin-bottom:1rem}
+	.row .tv-header-mov .mov-columns.mov-player .mov-info .mov-program-time::after {content:'';display:table;clear:both}
+}
+
+/*  list*/
+.tv-header-mov .mov-columns.mov-list {width:350px;border-left:1px solid rgba(0,0,0,.12)}
+.tv-header-mov .mov-columns.mov-list .mov-list-title {padding:1.25rem;font-size:1.125rem;font-weight:500;line-height:1;letter-spacing:-0.05em;border-bottom:1px solid rgba(0,0,0,.08)}
+.tv-header-mov .mov-columns.mov-list .mov-list-content {padding:1.25rem}
+.tv-header-mov .mov-columns.mov-list .content-inner {overflow-y:auto}
+.tv-header-mov .mov-columns.mov-list .auto-article {margin-top:1.25rem}
+.tv-header-mov .mov-columns.mov-list .auto-article:first-child {margin-top:0}
+.tv-header-mov .mov-columns.mov-list .auto-article .auto-images {width:120px;height:68px;margin-right:.75rem}
+.tv-header-mov .mov-columns.mov-list .auto-article.playing .auto-images::before {background-color:rgba(0,0,0,.65)}
+.tv-header-mov .mov-columns.mov-list .auto-article.playing .auto-images::after {content:'\0025';display:inline-block;position:absolute;z-index:8;font-family:'ndsoft fonts';font-size:1.75rem;font-style:normal;font-weight:normal;line-height:1;color:#fff;left:50%;top:50%;transform:translateY(-50%) translateX(-50%);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@media screen and (max-width: 63.9375em) {
+	.row .tv-header-mov .mov-columns.mov-list {width:auto;height:auto}
+	.row .tv-header-mov .mov-columns.mov-list .content-inner {overflow-y:inherit;overflow-x:auto}
+	.row .tv-header-mov .mov-columns.mov-list .content-inner-wrapper {width:2190px}
+	.row .tv-header-mov .mov-columns.mov-list .mov-list-title {font-weight:700}
+	.row .tv-header-mov .mov-columns.mov-list .auto-article {float:left;min-height:1px;width:150px;margin-top:0;margin-left:1.25rem}
+	.row .tv-header-mov .mov-columns.mov-list .auto-article:first-child {margin-left:0}
+	.row .tv-header-mov .mov-columns.mov-list .auto-article .auto-images {width:auto;height:85px;margin-right:auto;margin-bottom:.5rem}
+}
+
+/* palyer scroll */
+.mov-player-sticky {bottom:1.25rem}
+.mov-player-sticky.active {position:fixed;z-index:1000;width:360px;right:1.25rem}
+.mov-player-sticky .sticky-btns {display:none;position:absolute;z-index:1;margin-bottom:0;right:0;bottom:calc(100% + 1px)}
+.mov-player-sticky.active .sticky-btns {display:block}
+.mov-player-sticky.unactive,.mov-player-sticky.active.unactive {position:static;z-index:inherit;width:auto;right:inherit}
+@media screen and (max-width: 39.9375em) {
+	.row .mov-player-sticky.active {width:100%;left:0;top:0;right:inherit;bottom:inherit}
+	.row .mov-player-sticky.active .sticky-btns {display:none;float:none}
+}
+
+/* footer */
+.mov-footer {margin-bottom:1.25rem}
+.mov-footer::after {content:'';display:table;clear:both}
+.mov-footer .tabs {margin-right:-1px;border:none}
+.mov-footer .tabs .tabs-title:first-child:last-child {width:100%}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(2), .mov-footer .tabs .tabs-title:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tabs-title {display:inline-block;width:calc(50% - 1px);margin-right:1px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(2):last-child, .mov-footer .tabs .tabs-title:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tabs-title:last-child {margin-right:-6px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(3), .mov-footer .tabs .tabs-title:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tabs-title {display:inline-block;width:calc(33.33333% - 1px);margin-right:1px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(3):last-child, .mov-footer .tabs .tabs-title:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tabs-title:last-child {margin-right:-6px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(4), .mov-footer .tabs .tabs-title:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tabs-title {display:inline-block;width:calc(25% - 1px);margin-right:1px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(4):last-child, .mov-footer .tabs .tabs-title:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tabs-title:last-child {margin-right:-6px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(5), .mov-footer .tabs .tabs-title:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tabs-title {display:inline-block;width:calc(20% - 1px);margin-right:1px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(5):last-child, .mov-footer .tabs .tabs-title:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tabs-title:last-child {margin-right:-6px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(6), .mov-footer .tabs .tabs-title:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tabs-title {display:inline-block;width:calc(16.66667% - 1px);margin-right:1px}
+.mov-footer .tabs .tabs-title:first-child:nth-last-child(6):last-child, .mov-footer .tabs .tabs-title:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tabs-title:last-child {margin-right: -6px}
+.mov-footer .tabs .tabs-title {text-align:center;border:1px solid rgba(0,0,0,.12);border-left:none;border-bottom-color:rgba(0,0,0,.75)}
+.mov-footer .tabs .tabs-title:first-child {border-left:1px solid rgba(0,0,0,.12)}
+.mov-footer .tabs .tabs-title a {font-size:1.063rem;color:rgba(0,0,0,.45)}
+.mov-footer .tabs .tabs-title a:hover {color:#222}
+.mov-footer .tabs .tabs-title.is-active {margin-left:-1px;border-color:rgba(0,0,0,.75);border-left-width:1px;border-left-style:solid;border-bottom-color:transparent}
+.mov-footer .tabs .tabs-title.is-active:fitst-child {margin-left:none}
+.mov-footer .tabs .tabs-title.is-active a {color:#222;background:transparent}
+.mov-footer .tabs-content {border:none}
+.mov-footer .tabs-content .tabs-panel {padding-top:1.25rem;padding-left:0;padding-right:0;padding-bottom:0}
+
+/**********************************************
+note : TV onair(user)
+**********************************************/
+.tv-view.onair .mov-player::after {content:'* 인터넷환경에 따라 방송내용이 다소 지연될 수 있습니다.';display:block;padding:.7rem .9375rem;font-size:.7rem;font-weight:300;line-height:1.25em;color:rgba(255,255,255,.4);background-color:rgba(0,0,0,.8)}
+.tv-view.onair .responsive-embed {margin-bottom:0}
+.tv-view.onair .tv-header-mov .mov-columns.mov-list .mov-list-title a {display:block;position:relative;text-decoration:none}
+.tv-view.onair .tv-header-mov .mov-columns.mov-list .mov-list-title a::before {content:'전체보기';position:absolute;z-index:1;font-size:.7rem;font-weight:300;color:rgba(0,0,0,.4);right:.5rem;top:50%;transform:translateY(-50%)}
+.tv-view.onair .tv-header-mov .mov-columns.mov-list .mov-list-title a::after {content:'\f105';display:inline-block;position:absolute;z-index:2;font:normal normal normal 14px/1 FontAwesome;font-size:.7rem;color:rgba(0,0,0,.4);right:0;top:50%;transform:translateY(-50%);text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.tv-view.onair .tv-header-mov .mov-columns.mov-list .mov-list-title small {font-size:.7rem;font-weight:300;letter-spacing:-0.025em;color:rgba(0,0,0,.5)}
+
+/* list */
+.tv-view.onair .tv-header-mov .mov-columns.mov-list .mov-list-content {padding:0}
+.tv-view.onair .onair-content {padding-left:1.25rem;padding-right:1.25rem;border-bottom:1px solid rgba(0,0,0,.05)}
+.tv-view.onair .onair-content:last-child {border-bottom:none}
+.tv-view.onair .onair-content .dis-table {width:100%;table-layout:fixed}
+.tv-view.onair .onair-content .dis-table-cell {width:100%;height:75px;font-size:1.063rem;text-align:left;vertical-align:middle}
+.tv-view.onair .onair-content .dis-table-cell.times {width:95px;text-align:center}
+
+/* onair active */
+.tv-view.onair .onair-content.user-bg {position:relative;color:#fefefe}
+.tv-view.onair .onair-content.user-bg a {color:#fefefe}
+.tv-view.onair .onair-content.user-bg .dis-table-cell {font-size:1.25rem}
+.tv-view.onair .onair-content.user-bg::before {content:'ON AIR';position:absolute;z-index:1;font-size:.75rem;font-weight:300;letter-spacing:-0.025em;color:rgba(255,255,255,.5);right:.75rem;top:.35rem}
+
+@media screen and (max-width: 63.9375em) {
+	.row .tv-view.onair .onair-content {float:left;width:200px;padding:1.25rem;border-bottom:0}
+	.row .tv-view.onair .onair-content::before {content:'ON AIR';display:block;font-size:.9rem;color:#fff;visibility:hidden;text-align:center}
+	.row .tv-view.onair .onair-content.user-bg::before {position:static;margin-bottom:1rem;font-size:1rem;transform:translateY(0);top:inherit;right:inherit;visibility:visible}
+	.row .tv-view.onair .onair-content .dis-table,.tv-view.onair .onair-content .dis-table-cell {display:block;width:auto;line-height:1.25}
+	.row .tv-view.onair .onair-content .dis-table-cell.times {width:auto;margin-bottom:.25rem}
+	.row .tv-view.onair .onair-content .dis-table-cell {height:auto;text-align:center;vertical-align:top}
+	.row .tv-view.onair .mov-list-content .onair-content.user-bg .dis-table-cell {font-size:1.063rem;font-weight:700}
+}
+
+/**********************************************
+note : 편성표
+**********************************************/
+/* 요일 */
+.tv-schedule .schedule-lnb {max-height:97px;margin-bottom:3rem;text-align:center;border-bottom:1px solid rgba(0,0,0,.12)}
+.tv-schedule .schedule-lnb::after {content:'';display:table;clear:both}
+.tv-schedule .schedule-lnb .lnb-btns {width:96px;height:96px;font-size:3rem;cursor:pointer}
+.tv-schedule .schedule-lnb .lnb-btns.prev {float:left}
+.tv-schedule .schedule-lnb .lnb-btns.next {float:right}
+.tv-schedule .schedule-lnb .lnb-area {display:inline-block;width:calc(100% - 192px);margin-left:auto;margin-right:auto}
+.tv-schedule .schedule-lnb .lnb-area-days {float:left;position:relative;width:14.285714%;height:96px;line-height:1;letter-spacing:-0.025em;cursor:pointer;opacity:.5}
+.tv-schedule .schedule-lnb .lnb-area-days::after {content:'';position:absolute;z-index:1;left:0;right:0;top:calc(100% - 1px);border-bottom:2px solid transparent;visibility:hidden}
+.tv-schedule .schedule-lnb .lnb-area-days:hover,.tv-schedule .schedule-lnb .lnb-area-days.today {opacity:1}
+.tv-schedule .schedule-lnb .lnb-area-days strong {display:block;margin-bottom:.5rem;font-size:1.8rem;font-weight:500}
+.tv-schedule .schedule-lnb .lnb-area-days strong ~ span {font-size:.9rem;color:rgba(0,0,0,.5)}
+.tv-schedule .schedule-lnb .lnb-area-days:hover::after,.tv-schedule .schedule-lnb .lnb-area-days.today::after {border-bottom-color:rgba(0,0,0,.9);visibility:visible}
+@media screen and (max-width: 63.9375em) {
+	.row .tv-schedule .schedule-lnb {max-height:inherit;border-bottom:none}
+	.row .tv-schedule .schedule-lnb .lnb-area-days strong {font-size:1.3rem}
+	.row .tv-schedule .schedule-lnb .lnb-area-days {width:14.285714%;height:85px}
+	.row .tv-schedule .schedule-lnb .lnb-area-days::after {top:inherit;bottom:0}
+	.row .tv-schedule .schedule-lnb .lnb-btns {display:none}
+	.row .tv-schedule .schedule-lnb .lnb-area {width:100%}
+	.row .tv-schedule .schedule-lnb .lnb-area-inner {width:auto}
+}
+@media screen and (max-width: 39.9375em) {
+	.row .tv-schedule .schedule-lnb .lnb-area-days {width:25%}
+}
+
+/* 달력 커스텀 */
+.ui-datepicker-days-cell-over a {color:#fefefe !important;background-color:rgba(0,0,0,.5) !important;border-color:rgba(0,0,0,.08) !important}
+
+/* 리스트 */
+.tv-schedule {padding:1.5rem 0}
+#admin-wrap .tv-schedule {padding:0}
+.tv-schedule .schedule-header {margin-bottom:.5rem}
+.tv-schedule .schedule-header::after,.tv-schedule .schedule-list-container::after {content:'';display:table;clear:both}
+.tv-schedule .schedule-header .button-group,.tv-schedule .schedule-header .button {margin-bottom:0}
+.tv-schedule .schedule-program {width:100%;padding:1.5rem 0;border-bottom:1px solid rgba(0,0,0,.08);table-layout:fixed}
+.tv-schedule .schedule-program:first-child {border-top:1px solid rgba(0,0,0,.12)}
+.tv-schedule .schedule-program .dis-table-cell {width:100%;vertical-align:middle}
+.tv-schedule .schedule-program .dis-table-cell.times {width:160px;text-align:center}
+.tv-schedule .schedule-program .dis-table-cell.review {width:200px;text-align:center;letter-spacing:-0.05em}
+.tv-schedule .schedule-program .dis-table-cell.review > .button {padding-left:1.5rem;padding-right:1.5rem}
+.tv-schedule .schedule-program .on-time {font-size:1.75rem;line-height:1}
+.tv-schedule .schedule-program .now-on {display:none;margin-top:.75rem;padding:.5rem 1rem;font-size:1rem;line-height:1;letter-spacing:-0.05em;color:#fff;clear:both}
+.tv-schedule .schedule-program.onair {background-color:rgba(0,0,0,.05)}
+.tv-schedule .schedule-program.onair .now-on {display:inline-block}
+.tv-schedule .program-area {letter-spacing:-0.05em}
+.tv-schedule .program-area img {float:left;max-width:230px;margin-right:1.25rem}
+.tv-schedule .program-area .pro-title {margin-bottom:.5rem;font-size:1.25rem;font-weight:500;line-height:1.25em}
+.tv-schedule .program-area .pro-summary {margin-bottom:1rem;font-size:.9rem;color:rgba(0,0,0,.5)}
+@media screen and (max-width: 63.9375em) {
+	.row .tv-schedule {padding-left:1.25rem;padding-right:1.25rem}
+	.row .tv-schedule .program-area img {display:none}
+}
+@media screen and (max-width: 39.9375em) {
+	.row .tv-schedule .schedule-program,.row .tv-schedule .schedule-program .dis-table-cell {display:block;width:auto}
+	.row .tv-schedule .schedule-program .dis-table-cell {padding-left:.9375rem;padding-right:.9375rem}
+	.row .tv-schedule .schedule-program .dis-table-cell::after {content:'';display:table;clear:both}
+	.row .tv-schedule .schedule-program .dis-table-cell.times,.row .tv-schedule .schedule-program .dis-table-cell.review {width:auto;text-align:left}
+	.row .tv-schedule .schedule-program .dis-table-cell.times {margin-bottom:1rem}
+	.row .tv-schedule .schedule-program .dis-table-cell.review .button {padding:.75rem 1.125rem;font-size:.8rem}
+	.row .tv-schedule .schedule-program .on-time {display:inline-block;font-size:1.25rem}
+	.row .tv-schedule .schedule-program .now-on {margin-top:0;padding:.25rem .5rem;font-size:.6rem;clear:none}
+	.row .tv-schedule .program-area .label-group {margin-bottom:.5rem}
+	.row .tv-schedule .program-area .pro-title {font-size:1.5rem;font-weight:700;letter-spacing:-0.075em}
+	.row .tv-schedule .button-group,.row .tv-schedule .button {margin-bottom:1px}
+}
+
+
+/**********************************************
+note : episode
+**********************************************/
+.episode .ep-header {margin:-.9375rem -.9375rem 2rem -.9375rem;padding:1.25rem;background-color:#303740}
+.episode .ep-header::after {content:'';display:table;clear:both}
+.episode .ep-header .ep-header-image {float:left;position:relative;width:300px;box-shadow:0 0 10px rgba(0,0,0,.55)}
+.episode .ep-header .ep-header-image::before {content:'';position:absolute;z-index:1;width:100%;height:100%;left:0;top:0;border:1px solid rgba(255,255,255,.08)}
+.episode .ep-header .ep-header-image img {position:relative;width:100%}
+.episode .ep-header .ep-header-content {float:right;width:calc(100% - 330px);padding-left:.5rem}
+.episode .ep-header .ep-header-content {letter-spacing:-0.05em;color:rgba(255,255,255,.65)}
+.episode .ep-header .ep-header-title {margin-left:-.5rem;margin-bottom:.8rem;font-size:2rem;line-height:1.25em;letter-spacing:-0.05em;color:#fefefe}
+.episode .ep-header .ep-header-summary {margin-bottom:1.5rem;font-size:.9rem;line-height:1.65em}
+.episode .ep-header .ep-header-summary > strong {display:block;margin-bottom:.5rem;font-size:1rem;color:#fefefe}
+.episode .ep-header .ep-header-times {font-size:.9rem;color:#fefefe}
+@media screen and (max-width: 63.9375em) {
+	.row .episode .ep-header .ep-header-image {float:none;width:auto;margin-right:auto;margin-bottom:1.25rem;padding:1.25rem;background-color:rgba(0,0,0,.08);text-align:center;box-shadow:none}
+	.row .episode .ep-header .ep-header-image img {width:auto;margin-left:auto;margin-right:auto}
+	.row .episode .ep-header .ep-header-content {float:none;width:auto}
+}
+@media screen and (max-width: 39.9375em) {
+	.row .episode .ep-header .ep-header-image {padding:0;background:transparent}
+	.row .episode .ep-header .ep-header-image::before {display:none}
+}
+
+/* episode contents */
+.episode .ep-container {margin-bottom:2rem}
+.episode .ep-panel-title {margin-bottom:.5rem;font-size:1.75rem;line-height:1.25em;letter-spacing:-0.05em}
+.episode .ep-panel-summary {font-size:.9rem;line-height:1.65em;letter-spacing:-0.05em;color:rgba(0,0,0,.5)}
+.episode .ep-panel-times {margin-bottom:1.25rem;font-size:.8rem;letter-spacing:-0.025em;color:rgba(0,0,0,.7)}
+
+/**********************************************
+note : episode find
+**********************************************/
+.tv-episode-list {padding:1.25rem 0}
+.tv-episode-list .lists li {margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px dotted rgba(0,0,0,.15)}
+.tv-episode-list .lists li:last-child {border-bottom-style:solid}
+.tv-episode-list .lists li::after {content:'';display:table;clear:both}
+.tv-episode-list .lists li a {display:block;text-decoration:none}
+.tv-episode-list .lists li a .list-titles {overflow:hidden;font-size:1.063rem;letter-spacing:-0.05em;text-overflow:ellipsis;white-space:nowrap}
+.tv-episode-list .lists li a:hover .list-titles {text-decoration:underline}
+.tv-episode-list .lists li img {float:left;max-width:120px;margin-right:1.25rem}
+.tv-episode-list .lists .list-dated {font-size:.8rem;color:rgba(0,0,0,.5)}
+
+

@@ -1,0 +1,85 @@
+.tltBoxWrap {
+	/* clear:both; */ /*20150508 기사면 250*250 배너 추가시 텍스트 밀림*/
+	top:10px;
+	margin-top:20px;
+    position:relative;
+	margin-bottom:10px;
+}
+
+.tltBox {
+	font-weight:bolder;
+	font-size:21px;
+	line-height:24px;
+	letter-spacing:-1px;
+	word-spacing:3px;
+	color:#F47122;
+}
+
+.tltBoxFoot {
+	display:none;
+}
+
+.tltBoxWrap_bak_20150108 {
+    margin-top:24px;
+    height:30px;
+    position:relative;
+}
+
+
+.tltBoxFoot_bak_20150108 {
+	left:-25px;
+	top:35px;
+	position:absolute;
+	width:0px;
+	height:0px;
+	border-top: 10px solid #875c1a;
+	border-left: 10px solid transparent;
+	border-right: 0;
+	border-bottom: 0;
+	margin:0 0;
+}
+
+.tltBoxWrap_bak_20150108 {
+	margin-top:24px;
+	height:30px;
+	position:relative;
+}
+
+.tltBox_bak_20150108 {
+	width:675px;
+	left:-25px;
+	position:absolute;
+	padding-left:25px;
+	padding-top:2px;
+	padding-bottom:5px;
+	font-weight:bolder;
+	font-size:19px;
+	letter-spacing:-1px;
+	word-spacing:3px;
+	background-color:#e9a029;
+	color:white;
+}
+
+.tltBox2Wrap {
+	clear:both;
+	position:relative;
+	top:5px;
+	margin-bottom:10px;
+}
+
+.tltBox2 {
+	font-weight:bolder;
+	font-size:17px;
+	letter-spacing:-1px;
+	word-spacing:3px;
+}
+
+table.albumLinkDspTb {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+table.albumLinkDspTb td {
+	text-align:center;
+	vertical-align:middle;
+}

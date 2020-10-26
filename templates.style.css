@@ -1,0 +1,60 @@
+﻿@charset "UTF-8";
+/**********************************************
+note : 기사내용 템플릿
+**********************************************/
+/* 인용구1(큰따옴표) */
+#tem-type-1 {margin-bottom:3rem;font-size:1.3rem;font-weight:400 !important;text-align:center}
+#tem-type-1::before,#tem-type-1::after {display:block;font-family:'ndsoft fonts';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+#tem-type-1::before {content:'\005b';margin-bottom:1.25rem}
+#tem-type-1::after {content:'\007c';margin-top:1.25rem}
+#tem-type-1 p {margin:0;padding:0;line-height:1.8em;text-align:center}
+
+/* 인용구2(좌측 두꺼운선) */
+#tem-type-2 {position:relative;margin-bottom:3rem;padding-left:1.25rem;font-size:1.3rem;font-weight:400 !important;text-align:left}
+#tem-type-2::before {content:'';position:absolute;z-index:1;left:0;top:0;bottom:0;border-left:4px solid #000}
+#tem-type-2::after {content:'';display:table;clear:both}
+#tem-type-2 p {margin:0;padding:0;line-height:1.8em;text-align:left}
+
+/* 인용구3(말풍선형태) */
+#tem-type-3 {position:relative;margin-bottom:5rem;padding:1rem 1.5rem;font-size:1.3rem;font-weight:400 !important;text-align:left;border:5px solid #e4e4e4}
+#tem-type-3::before {content:'';position:absolute;z-index:2;width:50px;height:50px;top:calc(100% - 25px);left:30%;border-width:5px;border-style:solid;border-color:transparent;border-right-color:#e4e4e4;box-sizing:border-box;-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+#tem-type-3::after {content:'';position:absolute;z-index:1;width:30px;border-top:5px solid #fff;left:calc(30% + 23px);top:100%;box-sizing:border-box}
+#tem-type-3 p {margin:0;padding:0;line-height:1.8em;text-align:left}
+
+/* 인용구4(큰따옴표&밑줄강조) */
+#tem-type-4 {position:relative;padding-bottom:1rem;margin-bottom:5rem;font-size:1.3rem;font-weight:400 !important;text-align:left;border-bottom:1px solid #000}
+#tem-type-4::before {content:'\005b';display:inline-block;margin-bottom:1.25rem;font-family:'ndsoft fonts';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+#tem-type-4::after {content:'';display:table;clear:both}
+#tem-type-4 p {margin:0;padding:0;line-height:1.8em;text-align:left}
+
+/* 인용구5(메모지) */
+#tem-type-5 {position:relative;margin-bottom:5rem;padding:1rem 1.5rem;font-size:1.3rem;font-weight:400 !important;text-align:left;border:5px solid #d5d5d5;box-sizing:border-box}
+#tem-type-5::before {content:'';position:absolute;z-index:1;right:-5px;bottom:-5px;border-width:25px;border-style:solid;border-color:#fff;border-top-color:#bfbfbf;border-left-color:#bfbfbf}
+#tem-type-5::after {content:'';display:table;clear:both}
+#tem-type-5 p {margin:0;padding:0;line-height:1.8em;text-align:left}
+
+/* 인용구6(대괄호) */
+#tem-type-6 {position:relative;margin-bottom:5rem;padding:1rem 1.5rem;font-size:1.3rem;font-weight:400 !important;text-align:left}
+#tem-type-6::before,#tem-type-6::after {content:'';position:absolute;z-index:1;width:35px;height:35px;border-width:5px;border-style:solid;border-color:transparent}
+#tem-type-6::before {left:0;top:0;border-left-color:#4a4a4a;border-top-color:#4a4a4a}
+#tem-type-6::after {right:0;bottom:0;border-right-color:#4a4a4a;border-bottom-color:#4a4a4a}
+#tem-type-6 p {margin:0;padding:0;line-height:1.8em;text-align:left}
+
+/* 인용구7(아이콘 & 텍스트강조) */
+#tem-type-7 {position:relative;margin-bottom:3rem;padding-bottom:1.5rem;font-size:1.3rem;font-weight:400 !important;text-align:center}
+#tem-type-7::after {content:'';position:absolute;z-index:2;width:60px;left:50%;bottom:0;border-bottom:2px solid #333;transform:translateX(-50%)}
+#tem-type-7 .icons {position:relative;display:block;width:130px;margin-left:auto;margin-right:auto;margin-bottom:1.25rem}
+#tem-type-7 .icons::before {content:'\0060';display:inline-block;position:relative;z-index:2;width:34px;font-family:'ndsoft fonts';font-style:normal;font-weight:normal;line-height:1;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+#tem-type-7 .icons::after {content:'';position:absolute;z-index:1;left:0;right:0;top:50%;border-top:1px solid #333}
+#tem-type-7 .header-titles {display:inline-block;margin-left:auto;margin-right:auto;padding:.25rem;color:#fff;background:#333;line-height:1}
+#tem-type-7 p {margin:0;padding:0;font-size:2.4rem;font-weight:700;line-height:1.8em;text-align:center}
+
+/* 인용구8(기본박스) */
+#tem-type-8 {margin-bottom:2rem;padding:1rem;border:1px solid rgba(0,0,0,.1);border-bottom-color:rgba(0,0,0,.25)}
+#tem-type-8 p:first-child {margin-top:0}
+#tem-type-8 p:last-child {margin-bottom:0}
+
+/* 인용구9(기본라인) */
+#tem-type-9 {margin-bottom:2rem;padding-bottom:1rem;font-size:1.3rem;border-bottom:1px solid #333}
+#tem-type-9 p:first-child {margin-top:0}
+#tem-type-9 p:last-child {margin-bottom:0}
